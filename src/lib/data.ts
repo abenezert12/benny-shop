@@ -216,10 +216,10 @@ export const products: Product[] = [
     reviewCount: 423,
     description: "Heavyweight cotton canvas tote bag. Perfect for groceries, gym clothes, or everyday carry. Reinforced handles for durability.",
     images: [
-      "https://images.unsplash.com/photo-1597248374161-426f0d6d2fc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1544816155-12df9643f363?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1605733513597-a8f8341084e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      "/canvas-tote.svg",
+      "/canvas-tote.svg",
+      "/canvas-tote.svg",
+      "/canvas-tote.svg"
     ],
     inStock: true,
     colors: ["Natural", "Olive", "Navy"]

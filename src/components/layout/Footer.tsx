@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-background py-16 mt-24">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
           
           <div className="space-y-4">
             <h3 className="text-xl font-semibold tracking-widest uppercase">BENNY</h3>
@@ -25,17 +25,6 @@ export function Footer() {
                 <Globe size={20} />
               </a>
             </div>
-          </div>
-
-          <div className="space-y-4">
-            <h4 className="text-sm font-semibold tracking-wider uppercase text-gray-200">Shop</h4>
-            <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link href="/products" className="hover:text-white transition-colors">All Products</Link></li>
-              <li><Link href="/products?category=Electronics" className="hover:text-white transition-colors">Electronics</Link></li>
-              <li><Link href="/products?category=Clothing" className="hover:text-white transition-colors">Clothing</Link></li>
-              <li><Link href="/products?category=Accessories" className="hover:text-white transition-colors">Accessories</Link></li>
-              <li><Link href="/products?category=Home" className="hover:text-white transition-colors">Home</Link></li>
-            </ul>
           </div>
 
           <div className="space-y-4">

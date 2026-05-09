@@ -7,6 +7,7 @@ import { useParams, Link, useLocation } from "wouter";
 import { Star, StarHalf, Minus, Plus, Heart, Share2, ShieldCheck, Truck, RefreshCw } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
+import { handleImageError } from "@/lib/imageUtils";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function ProductDetail() {
@@ -105,6 +106,7 @@ export default function ProductDetail() {
                   src={mainImage} 
                   alt={product.name} 
                   className="w-full h-full object-cover"
+                  onError={handleImageError}
                 />
               </AnimatePresence>
             </div>
@@ -118,7 +120,7 @@ export default function ProductDetail() {
                       mainImage === img ? "border-primary" : "border-transparent opacity-70 hover:opacity-100"
                     }`}
                   >
-                    <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-cover" />
+                    <img src={img} alt={`${product.name} ${idx + 1}`} className="w-full h-full object-cover" onError={handleImageError} />
                   </button>
                 ))}
               </div>

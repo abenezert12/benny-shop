@@ -4,6 +4,7 @@ import { Star, ShoppingCart } from "lucide-react";
 import { useCart } from "@/hooks/useCart";
 import { Button } from "./button";
 import { toast } from "sonner";
+import { handleImageError } from "@/lib/imageUtils";
 import { motion } from "framer-motion";
 
 interface ProductCardProps {
@@ -41,6 +42,7 @@ export function ProductCard({ product }: ProductCardProps) {
             alt={product.name} 
             className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
+            onError={handleImageError}
           />
           
           {product.badge && (

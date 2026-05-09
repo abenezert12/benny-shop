@@ -33,15 +33,14 @@ export function Navbar() {
           </button>
         </div>
 
-        <Link href="/" className="text-xl font-semibold tracking-widest uppercase">
+        <button 
+          onClick={() => window.location.href = '/'}
+          className="text-xl font-semibold tracking-widest uppercase hover:text-primary transition-colors"
+        >
           BENNY
-        </Link>
+        </button>
 
         <nav className="hidden md:flex items-center space-x-8 text-sm font-medium text-muted-foreground">
-          <Link href="/" className="hover:text-foreground transition-colors">{t("Home")}</Link>
-          <Link href="/products" className="hover:text-foreground transition-colors">{t("Shop")}</Link>
-          <Link href="/products?category=Electronics" className="hover:text-foreground transition-colors">{t("Tech")}</Link>
-          <Link href="/products?category=Clothing" className="hover:text-foreground transition-colors">Wear</Link>
         </nav>
 
         <div className="flex items-center space-x-4">
@@ -51,7 +50,10 @@ export function Navbar() {
           <Link href="/auth" className="p-2 text-foreground hover:text-primary transition-colors">
             <User size={20} />
           </Link>
-          <Link href="/cart" className="p-2 text-foreground hover:text-primary transition-colors relative">
+          <button 
+            onClick={() => window.location.href = '/cart'}
+            className="p-2 text-foreground hover:text-primary transition-colors relative"
+          >
             <ShoppingBag size={20} />
             <AnimatePresence>
               {totalItems > 0 && (
@@ -65,7 +67,7 @@ export function Navbar() {
                 </motion.span>
               )}
             </AnimatePresence>
-          </Link>
+          </button>
         </div>
       </div>
 
@@ -78,12 +80,6 @@ export function Navbar() {
             className="md:hidden border-t overflow-hidden bg-background"
           >
             <div className="flex flex-col p-4 space-y-4">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Home</Link>
-              <Link href="/products" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Shop All</Link>
-              <Link href="/products?category=Electronics" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Electronics</Link>
-              <Link href="/products?category=Clothing" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Clothing</Link>
-              <Link href="/products?category=Accessories" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Accessories</Link>
-              <Link href="/products?category=Home" onClick={() => setMobileMenuOpen(false)} className="text-lg font-medium p-2">Home</Link>
             </div>
           </motion.div>
         )}

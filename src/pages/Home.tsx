@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { products } from "@/lib/data";
+import { handleImageError } from "@/lib/imageUtils";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -12,8 +13,8 @@ export default function Home() {
 
   const categories = [
     { name: "Electronics", image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { name: "Clothing", image: "https://images.unsplash.com/photo-1489987707023-af614cbb3124?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
-    { name: "Accessories", image: "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { name: "Clothing", image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
+    { name: "Accessories", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
     { name: "Home", image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" }
   ];
 
@@ -26,6 +27,7 @@ export default function Home() {
             src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" 
             alt="Hero background" 
             className="w-full h-full object-cover object-center"
+            onError={handleImageError}
           />
           <div className="absolute inset-0 bg-black/20" />
         </div>
@@ -73,6 +75,7 @@ export default function Home() {
                   src={category.image} 
                   alt={category.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  onError={handleImageError}
                 />
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-colors duration-300" />
                 <div className="absolute inset-x-0 bottom-0 p-6">
@@ -123,6 +126,7 @@ export default function Home() {
                 src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                 alt="Craftsmanship" 
                 className="w-full h-full object-cover"
+                onError={handleImageError}
               />
             </div>
             <div className="order-1 md:order-2 md:pl-12 lg:pl-24 space-y-6">

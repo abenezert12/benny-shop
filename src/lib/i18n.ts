@@ -7,9 +7,6 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
-      "Home": "Home",
-      "Shop": "Shop",
-      "Tech": "Tech",
       "Cart": "Cart",
       "Sign In": "Sign In",
       "Welcome to BENNY": "Welcome to BENNY",
@@ -23,9 +20,6 @@ const resources = {
   },
   am: {
     translation: {
-      "Home": "መነሻ",
-      "Shop": "መለያ",
-      "Tech": "ቴክ",
       "Cart": "ጋሪ",
       "Sign In": "ይግቡ",
       "Welcome to BENNY": "እንኳን ደህና መጡ በቤኒ",

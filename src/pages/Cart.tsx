@@ -3,6 +3,7 @@ import { useCart } from "@/hooks/useCart";
 import { Link } from "wouter";
 import { Minus, Plus, Trash2, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { handleImageError } from "@/lib/imageUtils";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Cart() {
@@ -64,7 +65,7 @@ export default function Cart() {
                     <div className="col-span-6 flex items-center w-full">
                       <Link href={`/products/${item.id}`} className="shrink-0 relative block">
                         <div className="w-24 h-32 sm:w-24 sm:h-24 bg-muted overflow-hidden rounded-sm">
-                          <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
+                          <img src={item.image} alt={item.name} className="w-full h-full object-cover" onError={handleImageError} />
                         </div>
                       </Link>
                       <div className="ml-4 flex-1">
@@ -175,9 +176,12 @@ export default function Cart() {
               
               <div className="mt-6 text-center">
                 <p className="text-xs text-muted-foreground mb-4">Secure checkout. We accept all major credit cards.</p>
-                <Link href="/products" className="text-sm font-medium hover:underline decoration-1 underline-offset-4 inline-flex items-center text-muted-foreground hover:text-foreground">
+                <button 
+                  onClick={() => window.location.href = '/products'}
+                  className="text-sm font-medium hover:underline decoration-1 underline-offset-4 inline-flex items-center text-muted-foreground hover:text-foreground"
+                >
                   Continue Shopping
-                </Link>
+                </button>
               </div>
             </div>
           </div>
