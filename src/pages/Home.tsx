@@ -1,5 +1,6 @@
 import { AppLayout } from "@/components/layout/AppLayout";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { ProductCard } from "@/components/ui/ProductCard";
@@ -8,8 +9,8 @@ import { handleImageError } from "@/lib/imageUtils";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const featuredProducts = products.filter(p => p.badge === "Best Seller" || p.badge === "New").slice(0, 4);
-  const newArrivals = products.filter(p => !featuredProducts.includes(p)).slice(0, 4);
+  const featuredProducts = products.filter(p => p.badge === "Best Seller").slice(0, 4);
+  const newArrivals = products.filter(p => p.badge === "New").slice(0, 4);
 
   const categories = [
     { name: "Electronics", image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" },
@@ -139,12 +140,22 @@ export default function Home() {
                 Every material is carefully sourced, every detail meticulously considered.
               </p>
               <div className="pt-4">
-                <Button variant="link" className="px-0 h-auto text-base" asChild>
-                  <Link href="/about" className="flex items-center group">
-                    Discover Our Process 
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
+                <Dialog>
+                  <DialogTrigger asChild>
+                    <Button variant="link" className="px-0 h-auto text-base flex items-center group">
+                      Discover Our Process
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </DialogTrigger>
+                  <DialogContent>
+                    <DialogHeader>
+                      <DialogTitle>Discover Our Process</DialogTitle>
+                    </DialogHeader>
+                    <DialogDescription className="whitespace-pre-line">
+                      Benny Shop is a modern ecommerce platform crafted to deliver a fast, seamless, and visually engaging shopping experience. Built with a focus on clean design, responsive performance, and intuitive user interaction, BennyShop combines modern web technologies with elegant UI to create a smooth digital marketplace for today’s users.
+                    </DialogDescription>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
           </div>

@@ -31,10 +31,11 @@ export default function Products() {
   const searchString = useSearch();
   const searchParams = new URLSearchParams(searchString);
   const initialCategory = searchParams.get("category");
+  const isNewCategory = initialCategory === "New";
   
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategories, setSelectedCategories] = useState<string[]>(
-    initialCategory ? [initialCategory] : []
+    initialCategory && !isNewCategory ? [initialCategory] : []
   );
   const [priceRange, setPriceRange] = useState<[number, number]>([0, 1000]);
   const [inStockOnly, setInStockOnly] = useState(false);
@@ -59,6 +60,11 @@ export default function Products() {
       
       // Category filter
       if (selectedCategories.length > 0 && !selectedCategories.includes(product.category)) {
+        return false;
+      }
+      
+      // New arrivals category filter
+      if (isNewCategory && product.badge !== "New") {
         return false;
       }
       
