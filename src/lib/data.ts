@@ -138,23 +138,6 @@ export const products: Product[] = [
     colors: ["White", "Black"],
     sizes: ["8", "9", "10", "11", "12"]
   },
-  {
-    id: "c4",
-    name: "Silk Scarf",
-    price: 65,
-    category: "Clothing",
-    rating: 4.6,
-    reviewCount: 89,
-    description: "100% mulberry silk scarf with hand-rolled edges. Adds a touch of elegance to any outfit.",
-    images: [
-      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1601140081636-f60fa696cb95?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1584916201218-f4242ceb4809?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596455607563-ad6193f76b17?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    colors: ["Cream", "Burgundy"]
-  },
   // Accessories
   {
     id: "a1",
@@ -207,23 +190,6 @@ export const products: Product[] = [
     inStock: true,
     colors: ["Tortoise", "Black"]
   },
-  {
-    id: "a4",
-    name: "Canvas Tote",
-    price: 45,
-    category: "Accessories",
-    rating: 4.8,
-    reviewCount: 423,
-    description: "Heavyweight cotton canvas tote bag. Perfect for groceries, gym clothes, or everyday carry. Reinforced handles for durability.",
-    images: [
-      "/canvas-tote.svg",
-      "/canvas-tote.svg",
-      "/canvas-tote.svg",
-      "/canvas-tote.svg"
-    ],
-    inStock: true,
-    colors: ["Natural", "Olive", "Navy"]
-  },
   // Home
   {
     id: "h1",
@@ -268,12 +234,13 @@ export const products: Product[] = [
     reviewCount: 67,
     description: "Solid walnut wood desk organizer. Keeps your pens, phone, and small accessories elegantly arranged.",
     images: [
-      "https://images.unsplash.com/photo-1593640498182-31c70c8268f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1505843490538-5133c6c7d0e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1497215848147-6b6680cbac23?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     ],
-    inStock: false
+    inStock: true,
+    colors: ["Charcoal", "Oatmeal", "Sage"]
   },
   {
     id: "h4",

@@ -39,7 +39,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-              Refined Essentials.
+              Benny Shop
             </h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-10 font-light">
               Elevate your everyday with our curated collection of premium objects, 
