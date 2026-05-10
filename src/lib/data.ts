@@ -2,7 +2,7 @@ export type Product = {
   id: string;
   name: string;
   price: number;
-  category: "Electronics" | "Clothing" | "Accessories" | "Home";
+  category: "Electronics" | "Clothing" | "Accessories" | "Shoes";
   rating: number;
   reviewCount: number;
   description: string;
@@ -123,7 +123,7 @@ export const products: Product[] = [
     id: "c3",
     name: "Leather Sneakers",
     price: 220,
-    category: "Clothing",
+    category: "Shoes",
     rating: 4.8,
     reviewCount: 456,
     description: "Minimalist leather sneakers handcrafted in Italy. Features premium full-grain leather and a durable rubber sole.",
@@ -137,6 +137,60 @@ export const products: Product[] = [
     badge: "Sale",
     colors: ["White", "Black"],
     sizes: ["8", "9", "10", "11", "12"]
+  },
+  {
+    id: "s1",
+    name: "Trail Runner",
+    price: 138,
+    category: "Shoes",
+    rating: 4.7,
+    reviewCount: 182,
+    description: "Lightweight trail running shoes with grippy rubber soles and breathable mesh. Built for comfort across paths and city streets.",
+    images: [
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["Navy", "Sage"],
+    sizes: ["7", "8", "9", "10", "11"]
+  },
+  {
+    id: "s2",
+    name: "Everyday Loafers",
+    price: 160,
+    category: "Shoes",
+    rating: 4.6,
+    reviewCount: 94,
+    description: "Sleek leather loafers with a cushioned footbed and refined silhouette. Perfect for work, travel, and evenings out.",
+    images: [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1596702762285-182ff435c567?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["Tan", "Black"],
+    sizes: ["8", "9", "10", "11", "12"]
+  },
+  {
+    id: "s3",
+    name: "Classic Court Sneakers",
+    price: 125,
+    category: "Shoes",
+    rating: 4.8,
+    reviewCount: 205,
+    description: "Clean court sneakers with leather uppers and durable rubber soles. A versatile pair for everyday style.",
+    images: [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1515347619252-60a4bf4fff4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["White", "Beige"],
+    sizes: ["7", "8", "9", "10", "11", "12"]
   },
   // Accessories
   {
@@ -190,73 +244,4 @@ export const products: Product[] = [
     inStock: true,
     colors: ["Tortoise", "Black"]
   },
-  // Home
-  {
-    id: "h1",
-    name: "Ceramic Mug Set",
-    price: 55,
-    category: "Home",
-    rating: 4.7,
-    reviewCount: 156,
-    description: "Set of two handcrafted ceramic mugs. Finished with a beautiful matte glaze. Dishwasher and microwave safe.",
-    images: [
-      "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1610706240212-0761e38bf3ce?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1577968897966-3d4325b36b61?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1481833758786-ceed163e90cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    badge: "New"
-  },
-  {
-    id: "h2",
-    name: "Linen Throw Blanket",
-    price: 120,
-    category: "Home",
-    rating: 4.9,
-    reviewCount: 88,
-    description: "Stonewashed linen throw blanket with fringed edges. Gets softer with every wash. Perfect for draping over a sofa or bed.",
-    images: [
-      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    colors: ["Charcoal", "Oatmeal", "Sage"]
-  },
-  {
-    id: "h3",
-    name: "Desk Organizer",
-    price: 75,
-    category: "Home",
-    rating: 4.4,
-    reviewCount: 67,
-    description: "Solid walnut wood desk organizer. Keeps your pens, phone, and small accessories elegantly arranged.",
-    images: [
-      "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    colors: ["Charcoal", "Oatmeal", "Sage"]
-  },
-  {
-    id: "h4",
-    name: "Scented Candle",
-    price: 38,
-    category: "Home",
-    rating: 4.8,
-    reviewCount: 512,
-    description: "Hand-poured soy wax candle with notes of cedarwood, vetiver, and subtle smoke. 50-hour burn time.",
-    images: [
-      "https://images.unsplash.com/photo-1602928321679-560bb453f190?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1603006905003-be475563bc59?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1608408843575-d14c27429183?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1596434444589-9a2c3a579691?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    badge: "Best Seller"
-  }
-];
+]; 

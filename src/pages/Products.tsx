@@ -41,7 +41,7 @@ export default function Products() {
   const [inStockOnly, setInStockOnly] = useState(false);
   const [sortOption, setSortOption] = useState<SortOption>("featured");
 
-  const categories = ["Electronics", "Clothing", "Accessories", "Home"];
+  const categories = ["Electronics", "Clothing", "Accessories", "Shoes"];
 
   const handleCategoryToggle = (category: string) => {
     setSelectedCategories(prev => 
