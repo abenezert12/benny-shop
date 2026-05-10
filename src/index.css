@@ -339,3 +339,22 @@
     inset: -1px;
   }
 }
+
+/* Rolling carousel animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.pause-animation:hover,
+.pause-animation:active {
+  animation-play-state: paused;
+}
