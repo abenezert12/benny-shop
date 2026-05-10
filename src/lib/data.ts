@@ -195,23 +195,6 @@ export const products: Product[] = [
   // Accessories
   {
     id: "a1",
-    name: "Minimalist Watch",
-    price: 349,
-    category: "Accessories",
-    rating: 4.9,
-    reviewCount: 342,
-    description: "A stunning timepiece featuring a sapphire crystal face, Swiss movement, and Italian leather strap. Designed for the modern purist.",
-    images: [
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-    ],
-    inStock: true,
-    badge: "Best Seller"
-  },
-  {
-    id: "a2",
     name: "Leather Wallet",
     price: 85,
     category: "Accessories",
@@ -228,7 +211,7 @@ export const products: Product[] = [
     colors: ["Tan", "Black", "Brown"]
   },
   {
-    id: "a3",
+    id: "a2",
     name: "Sunglasses",
     price: 195,
     category: "Accessories",
@@ -244,4 +227,130 @@ export const products: Product[] = [
     inStock: true,
     colors: ["Tortoise", "Black"]
   },
+  {
+    id: "e5",
+    name: "Wireless Earbuds",
+    price: 149,
+    category: "Electronics",
+    rating: 4.6,
+    reviewCount: 387,
+    description: "Premium wireless earbuds with active noise cancellation and 30-hour battery life. Crystal clear sound quality.",
+    images: [
+      "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1606220945770-b5b6c2c4b5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    badge: "New"
+  },
+  {
+    id: "e6",
+    name: "Smart Watch",
+    price: 299,
+    category: "Electronics",
+    rating: 4.8,
+    reviewCount: 542,
+    description: "Advanced smartwatch with health monitoring, GPS, and seamless smartphone integration. Premium build quality.",
+    images: [
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544117519-31a4b719223d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true
+  },
+  // More Clothing
+  {
+    id: "c4",
+    name: "Cotton T-Shirt",
+    price: 45,
+    category: "Clothing",
+    rating: 4.3,
+    reviewCount: 89,
+    description: "Soft, breathable organic cotton t-shirt with a comfortable fit. Perfect for everyday wear.",
+    images: [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1571945153237-4929e783af4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["White", "Black", "Gray", "Navy"],
+    sizes: ["S", "M", "L", "XL"]
+  },
+  {
+    id: "c5",
+    name: "Denim Jacket",
+    price: 120,
+    category: "Clothing",
+    rating: 4.5,
+    reviewCount: 156,
+    description: "Classic denim jacket with a timeless design. Made from premium cotton denim for durability and comfort.",
+    images: [
+      "https://images.unsplash.com/photo-1551537482-f2075a1d41f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1605902711834-8b11c3e3ef2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["Blue", "Black"],
+    sizes: ["S", "M", "L", "XL"]
+  },
+  // More Shoes
+  {
+    id: "s4",
+    name: "Running Shoes",
+    price: 180,
+    category: "Shoes",
+    rating: 4.7,
+    reviewCount: 298,
+    description: "High-performance running shoes with advanced cushioning and support. Designed for long-distance comfort.",
+    images: [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["Black", "White", "Blue"],
+    sizes: ["7", "8", "9", "10", "11", "12"]
+  },
+  {
+    id: "s5",
+    name: "Leather Boots",
+    price: 250,
+    category: "Shoes",
+    rating: 4.9,
+    reviewCount: 187,
+    description: "Premium leather boots crafted for durability and style. Waterproof and weather-resistant for all seasons.",
+    images: [
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1607522370275-f14206abe5d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1554735490-5974588cbc4f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    badge: "New",
+    colors: ["Brown", "Black"],
+    sizes: ["7", "8", "9", "10", "11", "12"]
+  },
+  // More Accessories
+  {
+    id: "a3",
+    name: "Leather Backpack",
+    price: 180,
+    category: "Accessories",
+    rating: 4.6,
+    reviewCount: 234,
+    description: "Handcrafted leather backpack with multiple compartments. Perfect for work, travel, or everyday use.",
+    images: [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1622260613186-01c31c0b1a4c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1581605405669-fcdf81165afa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+    ],
+    inStock: true,
+    colors: ["Brown", "Black"]
+  }
 ]; 
